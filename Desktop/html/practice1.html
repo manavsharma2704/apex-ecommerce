@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 800px;
+            width: 100%;
+            background-color: skyblue;
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns: repeat(3,200px); */
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3,1fr);
+            gap: 5px 20px;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        .containers{
+            background-color: lightcoral;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="containers">container 1</div>
+        <div class="containers">container 2</div>
+        <div class="containers">container 3</div>
+        <div class="containers">container 4</div>
+        <div class="containers">container 5</div>
+        <div class="containers">container 6</div>
+        <div class="containers">container 7</div>
+        <div class="containers">container 8</div>
+        
+    </div>
+</body>
+</html>
