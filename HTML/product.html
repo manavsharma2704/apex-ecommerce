@@ -1,66 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APEX – Product</title>
+    <title>APEX - Product</title>
     <link rel="stylesheet" href="product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <header class="navbar">
+        <h1 style="font-family: Bebas Neue;font-size:50px;" class="logo">APEX</h1>
 
-<div class="product-container">
+        </nav>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#peakshoes">Peak Shoes</a></li>
+                <li><a href="#training">Training Gear</a></li>
+                <li><a href="#exclusive">Exclusive Drops</a></li>
+                <li><a href="#sale" class="sale_">SALE</a></li>
 
-    <!-- LEFT SIDE: ONLY ONE IMAGE -->
-    <div class="product-image">
-        <img src="shoe1.jpg" alt="APEX Shoes">
-    </div>
+            </ul>
+        </nav>
+        <div class="nav-right">
+            <div class="nav_right">
+                <div class="links">
+                    <a href="#">Help</a>
+                    <a href="#">Orders & Returns</a>
+                    <a href="login.html">Log In/Sign Up</a>
+                </div>
 
-    <!-- RIGHT SIDE: DETAILS -->
-    <div class="product-details">
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                    <button><input type="text" class="search"></button>
+                </div>
 
-        <h1>APEX UltraBoost Runner</h1>
-        <p class="price">₹4,499</p>
-        <p class="tax">Inclusive of all taxes</p>
 
-        <hr>
 
-        <!-- SIZES -->
-        <h3>Select Size</h3>
-        <div class="sizes">
-            <span>6</span>
-            <span>7</span>
-            <span>8</span>
-            <span>9</span>
-            <span>10</span>
+            </div>
+            
+    </header>
+
+    <div class="product-container">
+
+
+        <div class="productimg">
+            <img src="./resouces/Gemini_Generated_Image_nmd1c4nmd1c4nmd1.png" alt="APEX Shoes">
         </div>
 
-        <!-- COLORS -->
-        <h3>Colors</h3>
-        <div class="colors">
-            <div class="color red"></div>
-            <div class="color black"></div>
-            <div class="color white"></div>
+        <div class="pdetails">
+
+            <h1>Training JACKET</h1>
+            <p class="price">₹1,499</p>
+            <p class="tax">Inclusive of all taxes</p>
+
+            <hr>
+
+            <h3>Select Size</h3>
+            <div class="sizes">
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>10</span>
+            </div>
+
+            <h3>Colors</h3>
+            <div class="colors">
+                <div class="color green"></div>
+                <div class="color black"></div>
+                <div class="color white"></div>
+            </div>
+
+            <button class="addtocart">Add to Cart</button>
+            <button class="addtocart">Buy Now</button>
+
+            <h3>Description</h3>
+            <p>
+                The APEX UltraBoost Runner offers premium comfort and performance.
+                Lightweight, durable, and built for everyday running.
+            </p>
+            <hr>
+            <h3>Delivery & Returns</h3>
+
+            <p>Free delivery.</p>
+            <p> 7-day easy returns</p>
+
         </div>
 
-        <!-- BUTTON -->
-        <button class="add-cart">Add to Cart</button>
-
-        <!-- DESCRIPTION -->
-        <h3>Description</h3>
-        <p class="desc">
-            The APEX UltraBoost Runner offers premium comfort and performance.
-            Lightweight, durable, and built for everyday running.
-        </p>
-
-        <h3>Delivery & Returns</h3>
-        <p class="desc">
-            Free delivery over ₹999. 7-day easy returns.
-        </p>
-
     </div>
-
-</div>
 
 </body>
+
 </html>

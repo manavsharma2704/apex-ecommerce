@@ -4,6 +4,7 @@ body {
     background: #000000;
 }
 
+
 .container {
     display: flex;
     height: auto;
@@ -12,7 +13,7 @@ body {
 
 .form-section {
     width: 50%;
-    padding: 60px 80px;
+    padding: 60px 10px;
 }
 
 .form-section h1 {
@@ -49,7 +50,7 @@ input {
 
 
 .login {
-    width: 530px;
+    width: 100%;
     padding: 15px;
     font-size: 15px;
     font-weight: bold;
@@ -66,7 +67,7 @@ input {
     background-color: #97FB57;
     color: #000;
     font-weight: bold;
-    
+
 }
 
 .google {
@@ -74,7 +75,7 @@ input {
     padding: 15px;
     font-size: 15px;
     font-weight: bold;
-    background: white;
+    background-color: white;
     border: 1px solid #ccc;
     border-radius: 10px;
     cursor: pointer;
@@ -83,18 +84,69 @@ input {
     justify-content: center;
     gap: 8px;
 }
-.google:hover{
+
+.google:hover {
     background-color: #ccc;
 }
 
 
 
 .image-section {
-    width: 900px;
+    width: 100%;
+    height: 100vh;
     background-color: #000;
-    padding: 0 0 0 250px;
+    padding: 0 0 0 20px;
     display: flex;
-    align-items:end;
-    justify-content:end;
+    justify-content: end;
 }
 
+@media (max-width: 600px) {
+
+    .form-section {
+        padding: 20px;
+        width: 50%;
+    }
+
+    .form-section h1 {
+        font-size: 28px;
+    }
+    .google{width: 100%;}
+    label {
+        font-size: 13px;
+    }
+
+    input {
+        padding: 12px;
+        width: 90%;
+    }
+
+    .image-section img {
+        width:100%;
+        height: 100vh;
+    }
+}
+@media (min-width: 600px) and (max-width: 1080px){
+    .form-section {
+        padding: 20px;
+        width: 50%;
+    }
+
+    .form-section h1 {
+        font-size: 28px;
+    }
+    .google{width: 100%;}
+    label {
+        font-size: 13px;
+    }
+
+    input {
+        padding: 12px;
+        width: 90%;
+    }
+
+    .image-section img {
+        width:80%;
+        height: 100vh;
+    }
+
+}
