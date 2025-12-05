@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APEX - Product</title>
-    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="/HTML/Style/product.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -17,20 +18,29 @@
         </nav>
         <nav>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
+                <li><a href="/HTML/index.html">Home</a></li>
                 <li><a href="#peakshoes">Peak Shoes</a></li>
                 <li><a href="#training">Training Gear</a></li>
                 <li><a href="#exclusive">Exclusive Drops</a></li>
                 <li><a href="#sale" class="sale_">SALE</a></li>
 
+
             </ul>
+
         </nav>
+
         <div class="nav-right">
             <div class="nav_right">
                 <div class="links">
                     <a href="#">Help</a>
                     <a href="#">Orders & Returns</a>
-                    <a href="login.html">Log In/Sign Up</a>
+                    <a href="/HTML/Structure/login.html">Log In/Sign Up</a>
+                    
+                        
+                    
+
+
+
                 </div>
 
                 <div class="search-box">
@@ -41,14 +51,14 @@
 
 
             </div>
-            
+
     </header>
 
     <div class="product-container">
 
 
         <div class="productimg">
-            <img src="./resouces/Gemini_Generated_Image_nmd1c4nmd1c4nmd1.png" alt="APEX Shoes">
+            <img src="/HTML/resources/Gemini_Generated_Image_nmd1c4nmd1c4nmd1.png" alt="APEX Shoes">
         </div>
 
         <div class="pdetails">
@@ -75,7 +85,7 @@
                 <div class="color white"></div>
             </div>
 
-            <button class="addtocart">Add to Cart</button>
+            <button class="addtocart" onclick="fun()">Add to Cart</button>
             <button class="addtocart">Buy Now</button>
 
             <h3>Description</h3>
@@ -92,6 +102,17 @@
         </div>
 
     </div>
+    <script>
+
+        
+
+        function fun() {
+            
+
+            confirm("Item Added to Cart");
+        }
+
+    </script>
 
 </body>
 
